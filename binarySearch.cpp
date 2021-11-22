@@ -1,5 +1,5 @@
 #include <bits/stdc++.h> 
-
+// todo : make linear search
 using namespace std;
 
 int binary_search(int arr[], int n, int target){
