@@ -22,7 +22,7 @@ int main(){
 
   //reference variable
   int a = 10;
-  int b = 10; // a and b different same bucket
+  int b = 10; // a and b different bucket
   int &c = a; // a and c same bucket
   a++;
   cout << a << " " << c << endl;
