@@ -26,3 +26,18 @@ g++ -o outputfilename filename.c++
  - Binary left shiff <<  
  - Binary right shiff >> 
 
+#### left shiff
+ ```bash
+5 << 2
+0 0 0 0 1 0 1 -> 0 0 1 0 1 0 0
+a << b
+a * 2 ^ b
+ ``` 
+
+#### right shiff
+ ```bash
+10 >> 1
+0 0 1 0 1 0 -> 0 0 0 1 0 1 
+a >> b
+a / 2 ^ b
+ ``` 
