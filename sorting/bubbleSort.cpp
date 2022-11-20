@@ -4,11 +4,14 @@ using namespace std;
 
 void bubbleSort(int a[], int n ){
   for(int i = 0; i < n; i++){
+    bool isSwap = false;
     for(int j = 0; j <= n - i - 1; j++){
       if(a[j] > a[j+1]){
+        isSwap = true;
         swap(a[j], a[j+1]);
       }
     }
+    if(isSwap) break;
   }  
 }
 
@@ -25,6 +28,14 @@ void bubbleSort2(int a[], int n ){
   }while(swapped);
 }
 
+void print(string pre, int arr[], int n){
+  cout << pre << " : ";
+  for(int i = 0; i < n; ++i){
+    cout << arr[i] << " ";
+  }
+  cout << endl;
+}
+
 
 int main(){
   int arr[] = {-2, 3, 4, -1, 5, -12, 6, 1, 3};
@@ -32,17 +43,15 @@ int main(){
 
   int size = sizeof(arr) / sizeof(int);
 
+  print("before", arr, size);
+  print("before", arr2, size);
+
+
   bubbleSort(arr, size);
   bubbleSort2(arr2, size);
 
-  for(auto x : arr){
-    cout << x << ", ";
-  }
+  print("after", arr, size);
+  print("after", arr2, size);
 
-  cout << endl;
-
-  for(auto x : arr2){
-    cout << x << ", ";
-  }
   return 0;
 }
