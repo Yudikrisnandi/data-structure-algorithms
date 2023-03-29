@@ -1,6 +1,6 @@
 # Note
 
-### Cara compile program c++
+### how to compile & run c++ program 
 
 - compile program c++
 
@@ -13,3 +13,10 @@ g++ -o outputfilename filename.c++
 ```bash
 ./outputfilename
 ```
+
+### how to split string into vector or array 
+
+```c++
+
+```
+
